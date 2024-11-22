@@ -1,0 +1,279 @@
+:root {
+    --cor-de-fundo: #F0F5E9;
+    --branco: #FFFFFF;
+    --verde-claro: #A3C686;
+    --verde-escuro: #4C9A2A;
+    --marrom-claro: #A67B5B;
+    --marrom-escuro: #5C4033;
+    --fonte-principal: "Poppins";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--branco);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em 2em;
+}
+
+.lista-menu__titulo {
+    color: var(--verde-claro);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.lista-menu__item:not(:last-child) {
+    border-bottom: 1px solid var(--cor-de-fundo);
+}
+
+.lista-menu__link {
+    color: var(--verde-escuro);
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+.banner {
+    background: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.banner__titulo {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+    font-size: 1.2em;
+}
+
+.banner__pesquisa {
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 0.75em 1em;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1em;
+}
+
+.banner__pesquisa::placeholder {
+    color: var(--branco);
+    text-align: center;
+}
+
+.carrossel__titulo {
+    color: var(--verde-escuro);
+    background-color: var(--verde-claro);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+.swiper-slide {
+    background-color: var(--branco);
+    padding: 2em;
+    border: 1px solid var(--cor-de-fundo);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.baloon {
+    background-color: var(--verde-claro);
+    border: 1px solid var(--verde-escuro);
+    border-radius: 5px;
+    padding: 1em;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+.card {
+    background: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.card__descrição > * {
+    flex: 1;
+}
+
+.descrição__titulo {
+    color: var(--verde-escuro);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.descrição__titulo-livro {
+    color: var(--marrom-escuro);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0.5em 0;
+}
+
+.descrição__texto {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.botões__ancora {
+    background-color: var(--verde-claro);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 24px;
+}
+
+.botões__item {
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.contato {
+    background-color: var(--branco);
+    padding: 2em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--verde-escuro);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 0.5em 0 1em 0;
+    font-size: 1em;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 2px solid var(--marrom-escuro);
+    border-radius: 24px;
+    width: 90%;
+    max-width: 500px;
+    color: var(--marrom-escuro);
+    font-size: 1em;
+}
+
+.contato__email::placeholder {
+    color: var(--marrom-escuro);
+}
+
+.tópicos {
+    background: var(--verde-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 2em 1em;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+.tópicos__titulo {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.tópicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tópicos__item {
+    margin: 1em;
+}
+
+.tópicos__link {
+    color: var(--verde-escuro);
+    background-color: var(--verde-claro);
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 24px;
+    display: block;
+}
+
+.rodapé {
+    background-color: var(--branco);
+    padding: 2em 1em;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rodapé__titulo {
+    color: var(--verde-escuro);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--cor-de-fundo);
+}

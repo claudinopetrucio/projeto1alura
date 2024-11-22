@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DiscoverBrasil</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Destinos</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Praias</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Cidades Históricas</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ecoturismo</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Cultura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Gastronomia</a>
+        </li>
+      </ul>
+      <img src="https://w7.pngwing.com/pngs/361/627/png-transparent-leaf-logo-green-leaves-green-and-teal-leaf-logo-text-maple-leaf-grass-thumbnail.png" alt="Logo DiscoverBrasil" class="container__imagem" height="35" width="35">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.png" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.png" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.png" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para sua próxima aventura?</h2>
+    <p class="banner__texto">Descubra destinos incríveis para suas próximas férias!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo destino?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos Destinos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Praias do Nordeste</h3>
+            <p>Desfrute de praias paradisíacas.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Cidades Históricas</h3>
+            <p>Conheça a rica história do Brasil.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Chapada Diamantina</h3>
+            <p>Explore trilhas e cachoeiras incríveis.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Festas Culturais</h3>
+            <p>Participe de celebrações autênticas.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Gastronomia</h3>
+            <p>Saboreie pratos típicos deliciosos.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Ecoturismo</h3>
+            <p>Conecte-se com a natureza.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Destinos Populares</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Arraial do Cabo</h3>
+            <p>Praias cristalinas.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Ouro Preto</h3>
+            <p>Arquitetura colonial impressionante.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Pantanal</h3>
+            <p>Paisagens deslumbrantes e vida selvagem.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Rio de Janeiro</h3>
+            <p>Vista icônica do Cristo Redentor.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Amazônia</h3>
+            <p>Floresta e rios majestosos.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="baloon">
+            <h3>Foz do Iguaçu</h3>
+            <p>Cataratas impressionantes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS RECENTEMENTE VISITADOS</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Chapada dos Veadeiros</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Bonito</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Búzios</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Manaus</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ilhabela</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Paraty</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
